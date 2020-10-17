@@ -1,0 +1,242 @@
+<html>
+  <head>
+    <title>Case Study
+
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <center>
+      <div class="col-xs-12 header_div">
+        <h2>
+          Case Study
+          <img src="logo.gif" />
+        </h2>
+           </center>
+      </div>
+      <ol>
+        <li>
+        <div class="col-xs-12 main_div">
+          <label>Test image- </label>
+          <div id="result">
+            <img style="width: inherit;" src="bottle.jpg">
+          </div>
+          
+        </div>
+        <p><span class="subtitle">Actual result: </span><span class="model_result">Bottle</span></p>
+        <div id="result_in_models" style="border-radius: 20px; background-color: #d6bad3" class="btn">
+          <p>
+            Result on <span class="subtitle">Google Lens project</span> :
+            <span class="model_result">Milton thermosteel duo deluxe stainless steel water bottle</span>
+          </p>
+          <p>
+            Result on <span class="subtitle">MobileNet project</span> :
+            <span class="model_result"></span>
+          </p>
+
+        </div>
+        <p> </p>
+      </li>
+      <li>
+        <div class="col-xs-12 main_div">
+          <label>Test image- </label>
+          <div id="result"><img style="width: inherit;" src="hp-laptop.jpg"></div>
+          
+        </div>
+      <p><span class="subtitle">Actual result: </span><span class="model_result">Laptop</span></p>
+        <div id="result_in_models" style="border-radius: 20px; background-color: #d6bad3" class="btn">
+          <p>
+            Result on <span class="subtitle">Google Lens project</span> :
+            <span class="model_result">HP probook 430 g4</span>
+          </p>
+          <p>
+            Result on <span class="subtitle">MobileNet project</span> :
+            <span class="model_result"></span>
+          </p>
+        </div>
+        <p> </p>
+      </li>
+      <li>
+        <div class="col-xs-12 main_div">
+          <label>Test image- </label>
+          <div id="result"><img style="width: inherit;" src="clock.jpg"></div>
+          
+        </div>
+        <p><span class="subtitle">Actual result: </span><span class="model_result">Clock</span></p>
+        <div id="result_in_models" style="border-radius: 20px; background-color: #d6bad3" class="btn">
+          <p>
+            Result on <span class="subtitle">Google Lens project</span> :
+            <span class="model_result">Ajanta plastic wall clock</span>
+          </p>
+          <p>
+            Result on <span class="subtitle">MobileNet project</span> :
+            <span class="model_result"></span>
+          </p>
+        </div>
+        <p> </p>
+      </li>
+      <li>
+        <div class="col-xs-12 main_div">
+          <label>Test image- </label>
+          <div id="result">
+            <img style="width: inherit; height: 290px;" src="chair.jpg">
+            <br><br>
+          </div>
+          
+          
+        </div>
+      <p><span class="subtitle">Actual result: </span><span class="model_result">Chair</span></p>
+        <div id="result_in_models" style="border-radius: 20px; background-color: #d6bad3" class="btn">
+          <p>
+            Result on <span class="subtitle">Google Lens project</span> :
+            <span class="model_result">Wooden office chair</span>
+          </p>
+          <p>
+            Result on <span class="subtitle">MobileNet project</span> :
+            <span class="model_result"></span>
+          </p>
+        </div>
+        <p> </p>
+      </li>
+      <li>
+        <div class="col-xs-12 main_div">
+          <label>Test image- </label>
+          <div id="result"><img style="width: inherit;" src="computer-mouse.jpg"></div>
+          
+        </div>
+      <p><span class="subtitle">Actual result: </span><span class="model_result">Computer Mouse</span></p>
+        <div id="result_in_models" style="border-radius: 20px; background-color: #d6bad3" class="btn">
+          <p>
+            Result on <span class="subtitle">Google Lens project</span> :
+            <span class="model_result">Wireless computer mouse</span>
+          </p>
+          <p>
+            Result on <span class="subtitle">MobileNet project</span> :
+            <span class="model_result"></span>
+          </p>
+        </div>
+        <p> </p>
+      </li>
+      <li>
+        <div class="col-xs-12 main_div">
+          <label>Test image- </label>
+          <div id="result"><img style="width: inherit; height: 290px;" src="fresh-apple-500x500.jpg">
+        
+       
+      </div>
+          
+        </div>
+      <p><span class="subtitle">Actual result: </span><span class="model_result">Apple</span></p>
+        <div id="result_in_models" style="border-radius: 20px; background-color: #d6bad3" class="btn">
+          <p>
+            Result on <span class="subtitle">Google Lens project</span> :
+            <span class="model_result">Red wet apple</span>
+          </p>
+          <p>
+            Result on <span class="subtitle">MobileNet project</span> :
+            <span class="model_result"></span>
+          </p>
+        </div>
+        <p> </p>
+      </li>
+      <li>
+        <div class="col-xs-12 main_div">
+          <label>Test image- </label>
+          <div id="result"><img style="width: inherit;" src="books_759.jpg"></div>
+         
+        </div>
+      <p><span class="subtitle">Actual result: </span><span class="model_result">Books</span></p>
+        <div id="result_in_models" style="border-radius: 20px; background-color: #d6bad3" class="btn">
+          <p>
+            Result on <span class="subtitle">Google Lens project</span> :
+            <span class="model_result">Govt jobs in Tamil Nadu... </span>
+          </p>
+          <p>
+            Result on <span class="subtitle">MobileNet project</span> :
+            <span class="model_result"></span>
+          </p>
+        </div>
+        <p> </p>
+      </li>
+      <li>
+        <div class="col-xs-12 main_div">
+          <label>Test image- </label>
+          <div id="result"><img style="width: inherit; height: 290px;" src="orange.jpg"></div>
+          
+        </div>
+      <p><span class="subtitle">Actual result: </span><span class="model_result">Orange</span></p>
+        <div id="result_in_models" style="border-radius: 20px; background-color: #d6bad3" class="btn">
+          <p>
+            Result on <span class="subtitle">Google Lens project</span> :
+            <span class="model_result">Orange</span>
+          </p>
+          <p>
+            Result on <span class="subtitle">MobileNet project</span> :
+            <span class="model_result"></span>
+          </p>
+        </div>
+        <p> </p>
+      </li>
+      <li>
+        <div class="col-xs-12 main_div">
+          <label>Test image- </label>
+          <div id="result"><img style="width: inherit;" src="phone.jpg"></div>
+          
+        </div>
+      <p><span class="subtitle">Actual result: </span><span class="model_result">Phone</span></p>
+        <div id="result_in_models" style="border-radius: 20px; background-color: #d6bad3" class="btn">
+          <p>
+            Result on <span class="subtitle">Google Lens project</span> :
+            <span class="model_result">Samsung galaxy 10+</span>
+          </p>
+          <p>
+            Result on <span class="subtitle">MobileNet project</span> :
+            <span class="model_result"></span>
+          </p>
+        </div>
+        <p> </p>
+      </li>
+      <li>
+        <div class="col-xs-12 main_div">
+          <label>Test image- </label>
+          <div id="result"><img style="width: inherit; height: 290px;" src="pencil.jpg"></div>
+          
+        </div>
+      <p><span class="subtitle">Actual result: </span><span class="model_result">Pencil</span></p>
+        <div id="result_in_models" style="border-radius: 20px; background-color: #d6bad3" class="btn">
+          <p>
+            Result on <span class="subtitle">Google Lens project</span> :
+            <span class="model_result">Helen keller's pencil</span>
+          </p>
+          <p>
+            Result on <span class="subtitle">MobileNet project</span> :
+            <span class="model_result"></span>
+          </p>
+        </div>
+        <p> </p>
+      </li>
+    </ol>
+    <div style="border-radius: 20px; background-color: #cccccc;" class="final_result btn"> <b> </b></div>
+    <br><br><br><br>
+      
+  <div class="copyright_div">Developed by - Dikshha</div>
+    <script src="main.js"></script>
+  </body>
+</html>
